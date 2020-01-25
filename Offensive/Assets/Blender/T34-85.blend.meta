@@ -17,6 +17,14 @@ ModelImporter:
     100022: Tank2
     100024: Tank_001
     100026: Tower
+    100028: Circle_001
+    100030: Circle_002
+    100032: Circle_003
+    100034: Circle_004
+    100036: Circle_005
+    100038: Hatch
+    100040: Hatch2
+    100042: Hatch3
     400000: Body
     400002: Circle
     400004: Cube
@@ -31,6 +39,14 @@ ModelImporter:
     400022: Tank2
     400024: Tank_001
     400026: Tower
+    400028: Circle_001
+    400030: Circle_002
+    400032: Circle_003
+    400034: Circle_004
+    400036: Circle_005
+    400038: Hatch
+    400040: Hatch2
+    400042: Hatch3
     2100000: unnamed
     2300000: Body
     2300002: Circle
@@ -45,6 +61,14 @@ ModelImporter:
     2300020: Tank2
     2300022: Tank_001
     2300024: Tower
+    2300026: Circle_001
+    2300028: Circle_002
+    2300030: Circle_003
+    2300032: Circle_004
+    2300034: Circle_005
+    2300036: Hatch
+    2300038: Hatch2
+    2300040: Hatch3
     3300000: Body
     3300002: Circle
     3300004: Cube
@@ -58,6 +82,14 @@ ModelImporter:
     3300020: Tank2
     3300022: Tank_001
     3300024: Tower
+    3300026: Circle_001
+    3300028: Circle_002
+    3300030: Circle_003
+    3300032: Circle_004
+    3300034: Circle_005
+    3300036: Hatch
+    3300038: Hatch2
+    3300040: Hatch3
     4300000: Circle
     4300002: Cube_005
     4300004: Cube_004
@@ -71,8 +103,17 @@ ModelImporter:
     4300020: Gun
     4300022: Body
     4300024: Tower
+    4300026: Circle_005
+    4300028: Circle_004
+    4300030: Circle_003
+    4300032: Circle_002
+    4300034: Circle_001
+    4300036: Hatch
+    4300038: Hatch3
+    4300040: Hatch2
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

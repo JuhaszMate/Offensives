@@ -34,6 +34,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             deployCanvas.SetActive(false);
             menuCam.SetActive(false);
         }
+
     }
 
     public void German()
@@ -51,6 +52,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     void Connect()
     {
         PhotonNetwork.ConnectUsingSettings();
+        print("Joining...");
     }
 
     public override void OnConnectedToMaster()

@@ -14,8 +14,6 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
-        print("Joining...");
         deployCanvas.SetActive(false);
     }
 
@@ -53,7 +51,8 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     void Connect()
     {
-
+        PhotonNetwork.ConnectUsingSettings();
+        print("Joining...");
     }
     
     public override void OnConnectedToMaster()

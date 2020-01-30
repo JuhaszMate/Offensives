@@ -25,6 +25,17 @@ ModelImporter:
     100038: Hatch
     100040: Hatch2
     100042: Hatch3
+    100044: BezierCurve
+    100046: BezierCurve_001
+    100048: Circle_006
+    100050: Cube_006
+    100052: Cube_007
+    100054: Cube_008
+    100056: Hatch2_001
+    100058: Hatch3_001
+    100060: Hatch_001
+    100062: HatchBottom
+    100064: HatchTop
     400000: Body
     400002: Circle
     400004: Cube
@@ -47,6 +58,17 @@ ModelImporter:
     400038: Hatch
     400040: Hatch2
     400042: Hatch3
+    400044: BezierCurve
+    400046: BezierCurve_001
+    400048: Circle_006
+    400050: Cube_006
+    400052: Cube_007
+    400054: Cube_008
+    400056: Hatch2_001
+    400058: Hatch3_001
+    400060: Hatch_001
+    400062: HatchBottom
+    400064: HatchTop
     2100000: unnamed
     2300000: Body
     2300002: Circle
@@ -69,6 +91,17 @@ ModelImporter:
     2300036: Hatch
     2300038: Hatch2
     2300040: Hatch3
+    2300042: BezierCurve
+    2300044: BezierCurve_001
+    2300046: Circle_006
+    2300048: Cube_006
+    2300050: Cube_007
+    2300052: Cube_008
+    2300054: Hatch2_001
+    2300056: Hatch3_001
+    2300058: Hatch_001
+    2300060: HatchBottom
+    2300062: HatchTop
     3300000: Body
     3300002: Circle
     3300004: Cube
@@ -90,6 +123,17 @@ ModelImporter:
     3300036: Hatch
     3300038: Hatch2
     3300040: Hatch3
+    3300042: BezierCurve
+    3300044: BezierCurve_001
+    3300046: Circle_006
+    3300048: Cube_006
+    3300050: Cube_007
+    3300052: Cube_008
+    3300054: Hatch2_001
+    3300056: Hatch3_001
+    3300058: Hatch_001
+    3300060: HatchBottom
+    3300062: HatchTop
     4300000: Circle
     4300002: Cube_005
     4300004: Cube_004
@@ -111,6 +155,17 @@ ModelImporter:
     4300036: Hatch
     4300038: Hatch3
     4300040: Hatch2
+    4300042: BezierCurve_001
+    4300044: Cube_008
+    4300046: BezierCurve
+    4300048: Cube_007
+    4300050: Hatch2_001
+    4300052: Hatch3_001
+    4300054: Hatch_001
+    4300056: HatchTop
+    4300058: Circle_006
+    4300060: Cube_006
+    4300062: HatchBottom
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

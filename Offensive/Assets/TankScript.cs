@@ -13,12 +13,23 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
     private float maxRotateSpeed;
     private float acceleration;
     private float rotateAccenleration;
+
+    [SerializeField] private GameObject tower;
+    [SerializeField] private float towerSpeed;
+    [SerializeField] private float _towerSpeed;
+    [SerializeField] private float actualTowerSpeed;
+    public float sensitivity = 0.1f;
+    public float sensitivity2 = 0.1f;
+    private Quaternion towerRotation;
+    private Quaternion _towerRotation;
     
 
     // Start is called before the first frame update
     void Start()
     {
         tankRb = gameObject.GetComponent<Rigidbody>();
+        _towerRotation.eulerAngles = new Vector3(-90, 0, 0);
+        towerRotation.eulerAngles = new Vector3(-90, 0, 0);
     }
 
     // Update is called once per frame
@@ -28,6 +39,8 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
         {
             return;
         }
+
+        #region Movement
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -110,6 +123,21 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
         tankRb.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
 
         /////////////////////////////////////////
+        #endregion
+
+        #region Tower
+
+        _towerSpeed = Input.GetAxisRaw("Horizontal") * sensitivity * Time.deltaTime;
+        //towerSpeed = Mathf.Lerp(towerSpeed, _towerSpeed, sensitivity * Time.deltaTime);
+        towerSpeed += _towerSpeed;
+        actualTowerSpeed = Mathf.Lerp(actualTowerSpeed, towerSpeed, sensitivity2 * Time.deltaTime);
+        towerRotation.eulerAngles = new Vector3(-90, 0, actualTowerSpeed);
+        tower.transform.rotation = towerRotation;
+        Cursor.lockState = CursorLockMode.Locked;
+        
+        
+
+        #endregion
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

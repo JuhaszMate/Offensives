@@ -627,7 +627,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1686120119}
         m_MethodName: Soviet
         m_Mode: 1
         m_Arguments:
@@ -1202,7 +1202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1686120119}
         m_MethodName: German
         m_Mode: 1
         m_Arguments:
@@ -1443,9 +1443,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1686120118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c316c7eec4251c42a5d346cf28b54b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 99aca2a42ec530840939ff6f8cb2c3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TeamID: 
+  choosingTeamObj:
+  - {fileID: 1401463365}
+  - {fileID: 425950833}
+  deployCanvas: {fileID: 705317856}
+  menuCam: {fileID: 534669902}
 --- !u!4 &1686120120
 Transform:
   m_ObjectHideFlags: 0

@@ -37,6 +37,9 @@ ModelImporter:
     100062: HatchBottom
     100064: HatchTop
     100066: Plane
+    100068: Cube_009
+    100070: Plane_001
+    100072: Plane_002
     400000: Body
     400002: Circle
     400004: Cube
@@ -71,6 +74,9 @@ ModelImporter:
     400062: HatchBottom
     400064: HatchTop
     400066: Plane
+    400068: Cube_009
+    400070: Plane_001
+    400072: Plane_002
     2100000: unnamed
     2300000: Body
     2300002: Circle
@@ -105,6 +111,9 @@ ModelImporter:
     2300060: HatchBottom
     2300062: HatchTop
     2300064: Plane
+    2300066: Cube_009
+    2300068: Plane_001
+    2300070: Plane_002
     3300000: Body
     3300002: Circle
     3300004: Cube
@@ -138,6 +147,9 @@ ModelImporter:
     3300060: HatchBottom
     3300062: HatchTop
     3300064: Plane
+    3300066: Cube_009
+    3300068: Plane_001
+    3300070: Plane_002
     4300000: Circle
     4300002: Cube_005
     4300004: Cube_004
@@ -171,6 +183,9 @@ ModelImporter:
     4300060: Cube_006
     4300062: HatchBottom
     4300064: Plane
+    4300066: Cube_009
+    4300068: Plane_002
+    4300070: Plane_001
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

@@ -57,8 +57,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100002, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,7 +135,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -212,7 +212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -289,7 +289,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -318,10 +318,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 707506082470951977}
-  - component: {fileID: 707506082478363585}
   - component: {fileID: 114092069532558972}
   - component: {fileID: 2762261319772129796}
   - component: {fileID: 114462818707599354}
+  - component: {fileID: 5061049440778747309}
   - component: {fileID: 6063460880823391832}
   - component: {fileID: 8144042462965767246}
   - component: {fileID: 6663505446872110702}
@@ -354,25 +354,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &707506082478363585
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707506082470977545}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114092069532558972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +373,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 2762261319772129796}
-  - {fileID: 114462818707599354}
+  - {fileID: 5061049440778747309}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -429,6 +410,23 @@ MonoBehaviour:
   actualTowerSpeed: 0
   sensitivity: 1
   sensitivity2: 1
+--- !u!114 &5061049440778747309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707506082470977545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cc611af60ba7f4ab43db1ffece9ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToDisable:
+  - {fileID: 6617025815817020618}
+  - {fileID: 5546452002585302360}
+  scriptsToDisable:
+  - {fileID: 114462818707599354}
 --- !u!54 &6063460880823391832
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -528,7 +526,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -607,7 +605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -699,7 +697,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff7891472e3836b49926afd0e53d982c, type: 3}
+  - {fileID: 2100000, guid: 6fc68caeca9486d47805ebf45a65ee2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -901,6 +899,7 @@ GameObject:
   - component: {fileID: 189130433119979776}
   - component: {fileID: 204562609885548216}
   - component: {fileID: 6738811538880732893}
+  - component: {fileID: 7005893839189364756}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -957,8 +956,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -972,3 +971,71 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6617025815817020618}
   m_Enabled: 1
+--- !u!114 &7005893839189364756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617025815817020618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  clearColorMode: 0
+  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  clearDepth: 1
+  renderingPath: 0
+  volumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  volumeAnchorOverride: {fileID: 0}
+  aperture: 8
+  shutterSpeed: 0.005
+  iso: 400
+  m_FrameSettings:
+    overrides: 0
+    enableShadow: 1
+    enableContactShadows: 1
+    enableShadowMask: 1
+    enableSSR: 0
+    enableSSAO: 1
+    enableSubsurfaceScattering: 1
+    enableTransmission: 1
+    enableAtmosphericScattering: 1
+    enableVolumetrics: 1
+    enableReprojectionForVolumetrics: 1
+    enableLightLayers: 1
+    diffuseGlobalDimmer: 1
+    specularGlobalDimmer: 1
+    shaderLitMode: 1
+    enableDepthPrepassWithDeferredRendering: 0
+    enableTransparentPrepass: 1
+    enableMotionVectors: 1
+    enableObjectMotionVectors: 1
+    enableDecals: 1
+    enableRoughRefraction: 1
+    enableTransparentPostpass: 1
+    enableDistortion: 1
+    enablePostprocess: 1
+    enableOpaqueObjects: 1
+    enableTransparentObjects: 1
+    enableRealtimePlanarReflection: 1
+    enableMSAA: 0
+    enableAsyncCompute: 1
+    runLightListAsync: 1
+    runSSRAsync: 1
+    runSSAOAsync: 1
+    runContactShadowsAsync: 1
+    runVolumeVoxelizationAsync: 1
+    lightLoopSettings:
+      overrides: 0
+      enableTileAndCluster: 1
+      enableComputeLightEvaluation: 1
+      enableComputeLightVariants: 1
+      enableComputeMaterialVariants: 1
+      enableFptlForForwardOpaque: 1
+      enableBigTilePrepass: 1
+      isFptlEnabled: 1

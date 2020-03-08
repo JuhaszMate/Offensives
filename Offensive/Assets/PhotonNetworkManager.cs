@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PhotonNetworkManager : MonoBehaviourPunCallbacks
+public class PhotonNetworkManager : MonoBehaviourPunCallbacks, IPunObservable
 {
 
     public string TeamID;
     [SerializeField] private GameObject[] choosingTeamObj;
     [SerializeField] private GameObject deployCanvas;
     [SerializeField] private GameObject menuCam;
+    [SerializeField] private GameObject mainCanvas;
+    private bool canSpawn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +28,18 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
             {
                 g.SetActive(false);
             }
+            if (canSpawn && photonView.IsMine)
+            {
+                deployCanvas.SetActive(true);
+            }
         }
 
-        if (deployCanvas.activeSelf && Input.GetKeyDown(KeyCode.Space))
+        if (deployCanvas.activeSelf && Input.GetKeyDown(KeyCode.Space) && canSpawn)
         {
             PhotonNetwork.Instantiate("Tiger", transform.position, transform.rotation, 0);
             deployCanvas.SetActive(false);
             menuCam.SetActive(false);
+            canSpawn = false;
         }
 
     }
@@ -51,6 +58,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
 
     void Connect()
     {
+        PhotonNetwork.GameVersion = "0.0.1";
         PhotonNetwork.ConnectUsingSettings();
         print("Joining...");
     }
@@ -58,13 +66,26 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         print("Connected to master");
-        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.JoinOrCreateRoom("room", null, null);
     }
 
-    public override void OnCreatedRoom()
+    public override void OnJoinedRoom()
     {
-        print("Room created");
+        menuCam.SetActive(true);
+        print("Joined room");
         deployCanvas.SetActive(true);
+        canSpawn = true;
+}
+
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(TeamID);
+        }
+        else
+        {
+            TeamID = (string)stream.ReceiveNext();
+        }
     }
 }

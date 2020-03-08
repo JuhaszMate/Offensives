@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
+public class TankScript : MonoBehaviourPunCallbacks
 {
-
     private Rigidbody tankRb;
     private float speed;
     private float maxSpeed;
@@ -27,6 +26,7 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
     // Start is called before the first frame update
     void Start()
     {
+
         tankRb = gameObject.GetComponent<Rigidbody>();
         _towerRotation.eulerAngles = new Vector3(-90, 0, 0);
         towerRotation.eulerAngles = new Vector3(-90, 0, 0);
@@ -35,10 +35,6 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
     // Update is called once per frame
     void Update()
     {
-        if (!photonView.IsMine)
-        {
-            return;
-        }
 
         #region Movement
 
@@ -138,10 +134,5 @@ public class TankScript : MonoBehaviourPunCallbacks, IPunObservable
         
 
         #endregion
-    }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-
     }
 }

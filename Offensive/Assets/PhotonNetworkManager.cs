@@ -36,7 +36,7 @@ public class PhotonNetworkManager : MonoBehaviourPunCallbacks, IPunObservable
 
         if (deployCanvas.activeSelf && Input.GetKeyDown(KeyCode.Space) && canSpawn)
         {
-            PhotonNetwork.Instantiate("Tiger", transform.position, transform.rotation, 0);
+            PhotonNetwork.Instantiate("T34-85 Variant", transform.position, transform.rotation, 0);
             deployCanvas.SetActive(false);
             menuCam.SetActive(false);
             canSpawn = false;

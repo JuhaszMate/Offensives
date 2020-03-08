@@ -10,15 +10,15 @@ public class TankScript : MonoBehaviourPunCallbacks
     private float maxSpeed;
     private float rotateSpeed;
     private float maxRotateSpeed;
-    private float acceleration;
-    private float rotateAccenleration;
+    [SerializeField] private float acceleration = 100f;
+    [SerializeField] private float rotateAccenleration = 100f;
 
     [SerializeField] private GameObject tower;
     [SerializeField] private float towerSpeed;
     [SerializeField] private float _towerSpeed;
     [SerializeField] private float actualTowerSpeed;
-    public float sensitivity = 0.1f;
-    public float sensitivity2 = 0.1f;
+    [SerializeField] private float sensitivity = 1f;
+    [SerializeField] private float sensitivity2 = 1f;
     private Quaternion towerRotation;
     private Quaternion _towerRotation;
     
@@ -41,14 +41,6 @@ public class TankScript : MonoBehaviourPunCallbacks
         if (Input.GetKey(KeyCode.W))
         {
             maxSpeed = 10;
-            if (maxSpeed > speed && speed < -0.01f)
-            {
-                acceleration = 1;
-            }
-            else
-            {
-                acceleration = 0.1f;
-            }
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
@@ -58,14 +50,6 @@ public class TankScript : MonoBehaviourPunCallbacks
         if (Input.GetKey(KeyCode.S))
         {
             maxSpeed = -10;
-            if (maxSpeed < speed && speed > 0.01f)
-            {
-                acceleration = 1;
-            }
-            else
-            {
-                acceleration = 0.1f;
-            }
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
@@ -74,22 +58,14 @@ public class TankScript : MonoBehaviourPunCallbacks
 
         /////////////////////////////////////////
 
-        speed = Mathf.Lerp(speed, maxSpeed, acceleration * Time.deltaTime);
-        tankRb.MovePosition(tankRb.position + new Vector3(0, 0, speed * Time.deltaTime));
+        speed = maxSpeed * acceleration;
+        tankRb.AddForce(Vector3.forward * speed * Time.deltaTime);
 
         /////////////////////////////////////////
 
         if (Input.GetKey(KeyCode.D))
         {
-            rotateSpeed = 10;
-            if (maxRotateSpeed > rotateSpeed && rotateSpeed < -0.01f)
-            {
-                rotateAccenleration = 1;
-            }
-            else
-            {
-                rotateAccenleration = 0.1f;
-            }
+            maxRotateSpeed = 10;
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
@@ -98,15 +74,7 @@ public class TankScript : MonoBehaviourPunCallbacks
 
         if (Input.GetKey(KeyCode.A))
         {
-            rotateSpeed = -10;
-            if (maxRotateSpeed < rotateSpeed && rotateSpeed > 0.01f)
-            {
-                rotateAccenleration = 1;
-            }
-            else
-            {
-                rotateAccenleration = 0.1f;
-            }
+            maxRotateSpeed = -10;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
@@ -115,8 +83,8 @@ public class TankScript : MonoBehaviourPunCallbacks
 
         /////////////////////////////////////////
 
-        rotateSpeed = Mathf.Lerp(rotateSpeed, maxRotateSpeed * 10, rotateAccenleration / 10 * Time.deltaTime);
-        tankRb.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
+        rotateSpeed = maxRotateSpeed * rotateAccenleration;
+        tankRb.AddTorque(0, rotateSpeed * Time.deltaTime, 0);
 
         /////////////////////////////////////////
         #endregion

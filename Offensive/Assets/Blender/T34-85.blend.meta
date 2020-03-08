@@ -40,6 +40,27 @@ ModelImporter:
     100068: Cube_009
     100070: Plane_001
     100072: Plane_002
+    100074: wheelL1
+    100076: wheelL2
+    100078: wheelL3
+    100080: wheelL4
+    100082: wheelL5
+    100084: wheelLeftfront
+    100086: wheelLeftRear
+    100088: wheelR1
+    100090: wheelR2
+    100092: wheelR3
+    100094: wheelR4
+    100096: wheelR5
+    100098: wheelRightfront
+    100100: wheelRightRear
+    100102: backHatch1
+    100104: backHatch2
+    100106: pipes
+    100108: Rope
+    100110: Screws
+    100112: tanks1
+    100114: tanks2
     400000: Body
     400002: Circle
     400004: Cube
@@ -77,6 +98,27 @@ ModelImporter:
     400068: Cube_009
     400070: Plane_001
     400072: Plane_002
+    400074: wheelL1
+    400076: wheelL2
+    400078: wheelL3
+    400080: wheelL4
+    400082: wheelL5
+    400084: wheelLeftfront
+    400086: wheelLeftRear
+    400088: wheelR1
+    400090: wheelR2
+    400092: wheelR3
+    400094: wheelR4
+    400096: wheelR5
+    400098: wheelRightfront
+    400100: wheelRightRear
+    400102: backHatch1
+    400104: backHatch2
+    400106: pipes
+    400108: Rope
+    400110: Screws
+    400112: tanks1
+    400114: tanks2
     2100000: unnamed
     2300000: Body
     2300002: Circle
@@ -114,6 +156,27 @@ ModelImporter:
     2300066: Cube_009
     2300068: Plane_001
     2300070: Plane_002
+    2300072: wheelL1
+    2300074: wheelL2
+    2300076: wheelL3
+    2300078: wheelL4
+    2300080: wheelL5
+    2300082: wheelLeftfront
+    2300084: wheelLeftRear
+    2300086: wheelR1
+    2300088: wheelR2
+    2300090: wheelR3
+    2300092: wheelR4
+    2300094: wheelR5
+    2300096: wheelRightfront
+    2300098: wheelRightRear
+    2300100: backHatch1
+    2300102: backHatch2
+    2300104: pipes
+    2300106: Rope
+    2300108: Screws
+    2300110: tanks1
+    2300112: tanks2
     3300000: Body
     3300002: Circle
     3300004: Cube
@@ -150,6 +213,27 @@ ModelImporter:
     3300066: Cube_009
     3300068: Plane_001
     3300070: Plane_002
+    3300072: wheelL1
+    3300074: wheelL2
+    3300076: wheelL3
+    3300078: wheelL4
+    3300080: wheelL5
+    3300082: wheelLeftfront
+    3300084: wheelLeftRear
+    3300086: wheelR1
+    3300088: wheelR2
+    3300090: wheelR3
+    3300092: wheelR4
+    3300094: wheelR5
+    3300096: wheelRightfront
+    3300098: wheelRightRear
+    3300100: backHatch1
+    3300102: backHatch2
+    3300104: pipes
+    3300106: Rope
+    3300108: Screws
+    3300110: tanks1
+    3300112: tanks2
     4300000: Circle
     4300002: Cube_005
     4300004: Cube_004
@@ -186,6 +270,27 @@ ModelImporter:
     4300066: Cube_009
     4300068: Plane_002
     4300070: Plane_001
+    4300072: wheelRightfront
+    4300074: wheelR1
+    4300076: wheelR2
+    4300078: wheelR3
+    4300080: wheelR4
+    4300082: wheelR5
+    4300084: wheelRightRear
+    4300086: wheelLeftRear
+    4300088: wheelLeftfront
+    4300090: wheelL1
+    4300092: wheelL4
+    4300094: wheelL5
+    4300096: wheelL3
+    4300098: wheelL2
+    4300100: pipes
+    4300102: Screws
+    4300104: backHatch2
+    4300106: backHatch1
+    4300108: Rope
+    4300110: tanks2
+    4300112: tanks1
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

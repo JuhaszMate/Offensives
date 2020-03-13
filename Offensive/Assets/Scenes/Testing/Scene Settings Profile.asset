@@ -74,24 +74,24 @@ MonoBehaviour:
     max: 10
   atmosphereThickness:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.47
     min: 0
     max: 5
   skyTint:
     m_OverrideState: 1
-    m_Value: {r: 0.28337622, g: 0.2236116, b: 0.6320754, a: 1}
+    m_Value: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   groundColor:
     m_OverrideState: 1
-    m_Value: {r: 0.369, g: 0.349, b: 0.341, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   enableSunDisk:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &114697255521251722
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -182,7 +182,7 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 144.6
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1

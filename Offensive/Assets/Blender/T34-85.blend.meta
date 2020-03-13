@@ -61,6 +61,7 @@ ModelImporter:
     100110: Screws
     100112: tanks1
     100114: tanks2
+    100116: HatchTop2
     400000: Body
     400002: Circle
     400004: Cube
@@ -119,6 +120,7 @@ ModelImporter:
     400110: Screws
     400112: tanks1
     400114: tanks2
+    400116: HatchTop2
     2100000: unnamed
     2300000: Body
     2300002: Circle
@@ -177,6 +179,7 @@ ModelImporter:
     2300108: Screws
     2300110: tanks1
     2300112: tanks2
+    2300114: HatchTop2
     3300000: Body
     3300002: Circle
     3300004: Cube
@@ -234,6 +237,7 @@ ModelImporter:
     3300108: Screws
     3300110: tanks1
     3300112: tanks2
+    3300114: HatchTop2
     4300000: Circle
     4300002: Cube_005
     4300004: Cube_004
@@ -291,6 +295,7 @@ ModelImporter:
     4300108: Rope
     4300110: tanks2
     4300112: tanks1
+    4300114: HatchTop2
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
